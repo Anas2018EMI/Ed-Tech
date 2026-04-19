@@ -1,0 +1,22 @@
+:root {
+  --theme-text: #2d3748;
+  --theme-text-dull: #5c6069;
+  --theme-text-long: #718096;
+  --theme-color: #0081eb;
+  --theme-color-hover: #0062b3;
+  --theme-section-bg: #f6f7fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--theme-text);
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
