@@ -70,7 +70,7 @@ html::-webkit-scrollbar-track {
   background-color: var(--theme-section-bg);
   padding: 3rem 3rem;
   border-radius: 7px;
-  box-shadow: 5px 3px 2px rgb(140, 152, 164 / 15%);
+  box-shadow: 5px 3px 2px rgb(140 152 164 / 15%);
 }
 
 .m-menu .m-navbar li {
