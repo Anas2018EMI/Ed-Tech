@@ -3,6 +3,26 @@
 @import url("./_global.css");
 @import url("./_utility.css");
 
+/*//////  HTML and Scrollbar         //////////*/
+
+html {
+  font-size: 10px;
+}
+
+html::-webkit-scrollbar {
+  width: 20px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color);
+  border-radius: 10px;
+  border: 1px solid var(--theme-section-bg);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--theme-text);
+}
+
 /*//////  Header (navbar)           //////////*/
 .navbar {
   display: flex;
@@ -28,10 +48,54 @@
   color: var(--theme-color);
 }
 
+.m-menu {
+  display: none;
+  position: relative;
+}
+
+.m-menu .hamburger {
+  font-size: 3rem;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: var(--theme-text);
+}
+
+.m-menu .m-navbar {
+  position: absolute;
+  right: 9px;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-section-bg);
+  padding: 3rem 3rem;
+  border-radius: 7px;
+  box-shadow: 5px 3px 2px rgb(140, 152, 164 / 15%);
+}
+
+.m-menu .m-navbar li {
+  padding: 1rem 2rem;
+  font-weight: 500;
+  color: var(--theme-text-dull);
+}
+
+.m-menu .m-navbar li:hover {
+  cursor: pointer;
+  color: var(--theme-color);
+  background-color: #b8dfff;
+  border-radius: 5px;
+}
+
+.m-menu .m-navbar .btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 /*//////  Introduction section           //////////*/
 
 .intro-section {
   display: flex;
+  flex-wrap: wrap;
   margin: 7rem auto;
 }
 
@@ -257,7 +321,23 @@ span.highlight::before {
 
 .working {
   padding-top: 10rem;
+  /* height: 50vh;
+  overflow-y: scroll; */
 }
+
+/* .working::-webkit-scrollbar {
+  width: 20px;
+}
+
+.working::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color);
+  border-radius: 10px;
+  border: 1px solid var(--theme-section-bg);
+}
+
+.working::-webkit-scrollbar-track {
+  background-color: var(--theme-text);
+} */
 
 .content {
   font-size: 2rem;
